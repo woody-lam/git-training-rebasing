@@ -26,3 +26,7 @@ fun recursiveFibbonachi(previous: Int, current: Int, stepsLeft: Int): Int {
         else -> recursiveFibbonachi(current, previous + current, stepsLeft - 1)
     }
 }
+
+fun computeFibbonachiArray(start: Int, end: Int): List<Int> {
+    return (start..end).map { computeFibbonaciNumber(it) }
+}
